@@ -19,3 +19,5 @@ def checkReddit():
 			lastImageUrl = meguminImage
 			time.sleep(3600)
 			checkReddit()
+
+checkReddit()
