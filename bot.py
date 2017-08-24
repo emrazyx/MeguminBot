@@ -8,6 +8,8 @@ api = twitter.Api(consumer_key = consumerKey, consumer_secret = consumerSecret, 
 lastImageUrl = ""
 
 def checkReddit():
+	if lastImageUrl == "":
+		api.PostUpdate("I'm running!")
 	with requests.get('https://www.reddit.com/r/megumin/new.json', headers={'user-agent': 'OreganoMeguminBot'}) as url:
 		meguminData = json.loads(url.content)['data']['children'][0]['data']
 		meguminImage = meguminData['url']
