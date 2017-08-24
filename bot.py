@@ -1,9 +1,9 @@
-import twitter, json, requests, time
+import twitter, json, requests, time, os
 
-consumerKey = 'XBwg9fDh0ACXzZb3yYiYxv1nu'
-consumerSecret = '9VtSPiTutZPDCntndFOtttYRvzWcAxSsdhWJznbllOxMI2prYn'
-accessTokenKey = '2972389871-3yQQBePK9X7opd3cshn7fgOpCCQMMkVUtvDmdhs'
-accessTokenSecret = 'wzSgHwo23S3yj2DwGSyOoeEyYrwXt37zJV8A94r4Fm9gS'
+consumerKey = os.environ['consumer_key']
+consumerSecret = os.environ['consumer_secret']
+accessTokenKey = os.environ['access_token_key']
+accessTokenSecret = os.environ['access_token_secret']
 api = twitter.Api(consumer_key = consumerKey, consumer_secret = consumerSecret, access_token_key = accessTokenKey, access_token_secret = accessTokenSecret)
 lastImageUrl = ""
 
