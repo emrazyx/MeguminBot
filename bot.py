@@ -18,7 +18,8 @@ def checkReddit():
 		if (meguminImage != lastImageUrl):
 			api.PostMedia(meguminLink, meguminImage)
 			lastImageUrl = meguminImage
-			time.sleep(600) # sleep for 10 minutes
-			checkReddit()
+			#checkReddit()
 
-checkReddit()
+while True: 
+	checkReddit()
+	time.sleep(600) # sleep for 10 minutes
