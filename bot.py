@@ -15,4 +15,4 @@ def postMegumin():
 
 while True: 
 	postMegumin()
-	time.sleep(600) # sleep for 10 minutes
+	time.sleep(3600) # sleep for 10 minutes
